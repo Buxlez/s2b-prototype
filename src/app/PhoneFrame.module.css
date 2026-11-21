@@ -1,0 +1,96 @@
+.desktopStage {
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-desktop-outer);
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+.mobileStage {
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-mobile-outer);
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+.scaledCanvasWrapper,
+.scaledBezelWrapper {
+  position: relative;
+  flex-shrink: 0;
+  transform-origin: center center;
+}
+
+.iphoneBezel {
+  position: relative;
+  width: 426px;
+  height: 898px;
+  padding: 12px;
+  border-radius: 65px;
+  background: linear-gradient(145deg, #2b2e35 0%, #15171b 50%, #262930 100%);
+  box-shadow:
+    0 28px 70px rgba(15, 23, 42, 0.24),
+    0 8px 24px rgba(15, 23, 42, 0.14),
+    inset 0 0 0 1.5px rgba(255, 255, 255, 0.18),
+    inset 0 0 0 4px #0e1013;
+}
+
+.sideButtonLeftMute,
+.sideButtonLeftVolUp,
+.sideButtonLeftVolDown,
+.sideButtonRightPower {
+  position: absolute;
+  width: 3px;
+  background: #2e323a;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.sideButtonLeftMute {
+  left: -3px;
+  top: 148px;
+  height: 28px;
+}
+
+.sideButtonLeftVolUp {
+  left: -3px;
+  top: 198px;
+  height: 54px;
+}
+
+.sideButtonLeftVolDown {
+  left: -3px;
+  top: 266px;
+  height: 54px;
+}
+
+.sideButtonRightPower {
+  right: -3px;
+  top: 224px;
+  height: 82px;
+}
+
+.canvasDesktop {
+  position: relative;
+  width: 402px;
+  height: 874px;
+  border-radius: 53px;
+  overflow: hidden;
+  background-color: var(--bg-app);
+  transform: translateZ(0);
+}
+
+.canvasMobile {
+  position: relative;
+  width: 402px;
+  height: 874px;
+  overflow: hidden;
+  background-color: var(--bg-app);
+  transform: translateZ(0);
+}

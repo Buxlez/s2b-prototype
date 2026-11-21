@@ -1,0 +1,45 @@
+:root {
+  /* Fonts (Section 8.1) */
+  --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+  --font-title: "Poppins", sans-serif;
+
+  /* Canvas dimensions (Section 2) */
+  --canvas-width: 402px;
+  --canvas-height: 874px;
+  --screen-radius: 55px;
+
+  /* Background & surfaces */
+  --bg-app: #edf0f7;
+  --bg-desktop-outer: linear-gradient(180deg, #ffffff 0%, #ffffff 16.02%, #f1f0ff 40.7%, #c6dfff 100%);
+  --bg-mobile-outer: #edf0f7;
+  --bg-bezel: #1b1d22;
+
+  /* Ink colors */
+  --color-ink-100: #000000;
+  --color-ink-80: rgba(0, 0, 0, 0.8);
+  --color-ink-70: rgba(0, 0, 0, 0.7);
+  --color-ink-62: rgba(0, 0, 0, 0.62);
+  --color-ink-60: rgba(0, 0, 0, 0.6);
+  --color-ink-50: rgba(0, 0, 0, 0.5);
+  --color-ink-43: rgba(0, 0, 0, 0.43);
+  --color-ink-40: rgba(0, 0, 0, 0.4);
+  --color-ink-10: rgba(0, 0, 0, 0.1);
+
+  /* Brand & action colors */
+  --color-cta-dark: #1c2124;
+  --color-cta-pill: #1b2023;
+  --color-accent-blue: #4b9bff;
+  --color-accent-blue-bright: #2383ff;
+  --color-accent-blue-muted: #428bc1;
+  --color-chip-bg: #dbe8f9;
+
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.4);
+  --glass-bg-card: rgba(255, 255, 255, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.9);
+  --glass-blur: blur(9px);
+
+  /* Shadows */
+  --shadow-card: 0px 1px 10.6px 0px rgba(0, 0, 0, 0.03);
+  --shadow-floating: 10px 4px 10px 0px rgba(0, 0, 0, 0.05);
+}

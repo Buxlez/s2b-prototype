@@ -1,0 +1,108 @@
+.collapsedBtn {
+  position: fixed;
+  left: 16px;
+  top: 16px;
+  z-index: 100;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(10px);
+  padding: 8px 12px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  color: #1b2023;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
+}
+
+.panel {
+  position: fixed;
+  left: 16px;
+  top: 16px;
+  width: 196px;
+  z-index: 100;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(12px);
+  padding: 12px;
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.panelHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panelTitle {
+  font-family: var(--font-title);
+  font-size: 12px;
+  font-weight: 600;
+  color: #1b2023;
+}
+
+.collapseBtn {
+  border: none;
+  background: rgba(0, 0, 0, 0.06);
+  width: 22px;
+  height: 22px;
+  border-radius: 11px;
+  font-size: 14px;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.groupLabel {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.btnGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px;
+}
+
+.itemBtn {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5px 6px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.72);
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 100ms ease, color 100ms ease;
+}
+
+.itemBtn:hover {
+  background: #ffffff;
+}
+
+.active {
+  background: #1b2023;
+  border-color: #1b2023;
+  color: #ffffff;
+}
+
+.active:hover {
+  background: #1b2023;
+}

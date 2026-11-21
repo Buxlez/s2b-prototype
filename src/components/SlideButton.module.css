@@ -1,0 +1,90 @@
+.sliderTrack {
+  position: absolute;
+  width: 368px;
+  height: 58px;
+  border-radius: 29px;
+  background-color: #1b2023;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: 5;
+}
+
+.progressFill {
+  position: absolute;
+  inset: 0;
+  transform-origin: left center;
+  background: linear-gradient(90deg, rgba(52, 142, 252, 0.28) 0%, rgba(165, 187, 249, 0.16) 100%);
+  pointer-events: none;
+}
+
+.sliderKnob {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  border-radius: 23px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: grab;
+  touch-action: none;
+  z-index: 2;
+  transition: box-shadow 120ms ease;
+}
+
+.sliderKnobActive {
+  cursor: grabbing;
+  box-shadow: 0px 2px 12px rgba(255, 255, 255, 0.35);
+}
+
+.knobArrow {
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+.sliderTextCentered {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  background: linear-gradient(
+    96.04deg,
+    rgba(255, 255, 255, 0.8) 1%,
+    rgba(255, 255, 255, 0.392) 124.43%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.sliderTextLeft {
+  position: absolute;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  background: linear-gradient(
+    98.73deg,
+    rgba(255, 255, 255, 0.8) 1%,
+    rgba(255, 255, 255, 0.392) 124.43%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  pointer-events: none;
+  white-space: nowrap;
+}

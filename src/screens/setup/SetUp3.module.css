@@ -1,0 +1,185 @@
+.screen {
+  position: relative;
+  width: 402px;
+  height: 874px;
+  background-color: #edf0f7;
+  overflow: hidden;
+}
+
+.bgWrapper {
+  position: absolute;
+  left: -71px;
+  top: -163px;
+  width: 499px;
+  height: 1037px;
+  filter: blur(38.65px);
+  pointer-events: none;
+}
+
+.bgImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  top: 164px;
+  transform: translateX(-50%);
+  width: 276px;
+  text-align: center;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: normal;
+  background: linear-gradient(147.27deg, rgba(0, 0, 0, 0.8) 0%, rgba(52, 142, 252, 0.8) 141.86%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bubbleSelected {
+  filter: drop-shadow(0px 6px 18px rgba(35, 131, 255, 0.25));
+}
+
+.bubbleBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.bubble1 {
+  position: absolute;
+  left: 37px;
+  top: 283px;
+  width: 133.39px;
+  height: 133.39px;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.bubble1Text {
+  position: absolute;
+  left: 50%;
+  top: 48px;
+  transform: translateX(-50%);
+  width: 114px;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.bubble2 {
+  position: absolute;
+  left: 172px;
+  top: 296px;
+  width: 203px;
+  height: 203px;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.bubble2Text {
+  position: absolute;
+  left: 50%;
+  top: 82px;
+  transform: translateX(-50%);
+  width: 137px;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.bubble3 {
+  position: absolute;
+  left: 33px;
+  top: 422px;
+  width: 165px;
+  height: 165px;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.bubble3Text {
+  position: absolute;
+  left: 50%;
+  top: 61px;
+  transform: translateX(-50%);
+  width: 118px;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.bubble4 {
+  position: absolute;
+  left: 182px;
+  top: 505px;
+  width: 173px;
+  height: 173px;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.bubble4Text {
+  position: absolute;
+  left: 50%;
+  top: 70px;
+  transform: translateX(-50%);
+  width: 118px;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.nextBtn {
+  position: absolute;
+  left: 33px;
+  top: 754px;
+  width: 344px;
+  height: 54px;
+  border: none;
+  border-radius: 35px;
+  background-color: #1b2023;
+  color: #ffffff;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helpLink {
+  position: absolute;
+  left: 169px;
+  top: 816px;
+  border: none;
+  background: none;
+  padding: 0;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.2);
+  text-decoration: underline;
+}

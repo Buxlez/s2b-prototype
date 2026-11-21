@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="70.3902" height="31.7073" viewBox="0 0 70.3902 31.7073" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="bob-workstation-screen" d="M65.3171 0H5.07317C2.27134 0 0 2.27134 0 5.07317V26.6341C0 29.436 2.27134 31.7073 5.07317 31.7073H65.3171C68.1189 31.7073 70.3902 29.436 70.3902 26.6341V5.07317C70.3902 2.27134 68.1189 0 65.3171 0Z" fill="url(#paint0_linear_0_93)"/>
+<defs>
+<linearGradient id="paint0_linear_0_93" x1="0" y1="0" x2="23.7468" y2="52.7179" gradientUnits="userSpaceOnUse">
+<stop stop-color="#DCE3ED"/>
+<stop offset="0.58" stop-color="#D6DEE9"/>
+<stop offset="1" stop-color="#CBD4E0"/>
+</linearGradient>
+</defs>
+</svg>

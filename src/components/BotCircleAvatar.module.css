@@ -1,0 +1,83 @@
+.circle {
+  position: relative;
+  flex-shrink: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 10.6px 0px rgba(0, 0, 0, 0.03);
+  overflow: hidden;
+}
+
+.bare {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.kevinGlow {
+  position: absolute;
+  left: -20.8%;
+  top: -20.8%;
+  width: 141%;
+  height: 141%;
+  max-width: none;
+  pointer-events: none;
+}
+
+.kevinBody {
+  position: absolute;
+  left: 16.94%;
+  top: 16.94%;
+  width: 67.74%;
+  height: 67.74%;
+  max-width: none;
+  pointer-events: none;
+}
+
+.kevinEyes {
+  position: absolute;
+  left: 43.67%;
+  top: 39.56%;
+  width: 14.4%;
+  height: 9.56%;
+  max-width: none;
+  pointer-events: none;
+}
+
+.bobGlow {
+  position: absolute;
+  left: -11.2%;
+  top: -11.2%;
+  width: 125.73%;
+  height: 125.73%;
+  max-width: none;
+  pointer-events: none;
+}
+
+.bobBody {
+  position: absolute;
+  left: 18.14%;
+  top: 15.74%;
+  width: 70.15%;
+  height: 67.51%;
+  max-width: none;
+  pointer-events: none;
+}
+
+.bobEyes {
+  position: absolute;
+  left: 43.55%;
+  top: 38.71%;
+  width: 14.4%;
+  height: 9.56%;
+  max-width: none;
+  pointer-events: none;
+}
+
+.bobMiniPng {
+  position: absolute;
+  left: 16.67%;
+  top: 18.33%;
+  width: 66.67%;
+  height: 61.67%;
+  object-fit: contain;
+  max-width: none;
+  pointer-events: none;
+}

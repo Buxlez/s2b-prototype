@@ -1,0 +1,634 @@
+.screen {
+  position: relative;
+  width: 402px;
+  height: 874px;
+  background-color: #edf0f7;
+  overflow: hidden;
+}
+
+.officeScene {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.coffeeStation {
+  position: absolute;
+  left: 21.8px;
+  top: 260px;
+  width: 44.4px;
+  height: 42.9px;
+}
+
+.cornerPlant {
+  position: absolute;
+  left: 334.3px;
+  top: 274px;
+  width: 34.3px;
+  height: 41.5px;
+}
+
+.bobShadow {
+  position: absolute;
+  left: 66.8px;
+  top: 239.5px;
+  width: 123px;
+  height: 24.7px;
+}
+
+.bobLegs {
+  position: absolute;
+  left: 68.7px;
+  top: 217.3px;
+  width: 120.3px;
+  height: 36.5px;
+}
+
+.bobDesktop {
+  position: absolute;
+  left: 62.1px;
+  top: 184.8px;
+  width: 133px;
+  height: 35.4px;
+}
+
+.bobKbShadow {
+  position: absolute;
+  left: 100.1px;
+  top: 185.9px;
+  width: 67.8px;
+  height: 7.6px;
+}
+
+.bobStand {
+  position: absolute;
+  left: 128.3px;
+  top: 180.5px;
+  width: 11.1px;
+  height: 7px;
+}
+
+.bobKb {
+  position: absolute;
+  left: 102.5px;
+  top: 185.6px;
+  width: 62.4px;
+  height: 4.8px;
+}
+
+.bobKbLine {
+  position: absolute;
+  left: 105.2px;
+  top: 185.3px;
+  width: 58px;
+  height: 0.64px;
+}
+
+.bobScreen {
+  position: absolute;
+  left: 98.5px;
+  top: 150.1px;
+  width: 70.4px;
+  height: 31.7px;
+}
+
+.bobScreenLine1 {
+  position: absolute;
+  left: 107px;
+  top: 161px;
+  width: 54px;
+  height: 3px;
+}
+
+.bobScreenLine2 {
+  position: absolute;
+  left: 107px;
+  top: 167px;
+  width: 34px;
+  height: 3px;
+}
+
+.bobWorkstationBot {
+  position: absolute;
+  left: 100px;
+  top: 174px;
+  width: 60px;
+  height: 57.27px;
+}
+
+.bobChair {
+  position: absolute;
+  left: 100.1px;
+  top: 212.9px;
+  width: 59.6px;
+  height: 42.2px;
+}
+
+.speechWrap {
+  position: absolute;
+  left: 99px;
+  top: 128px;
+  width: 70px;
+  height: 29.945px;
+}
+
+.speechImg {
+  position: absolute;
+  inset: -32.06% -15.14% -38.74% -15.14%;
+  width: 130.28%;
+  height: 170.8%;
+}
+
+.speechText {
+  position: absolute;
+  left: 11px;
+  top: 4px;
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
+}
+
+.trShadow {
+  position: absolute;
+  left: 210.5px;
+  top: 239.5px;
+  width: 123px;
+  height: 24.7px;
+}
+
+.trLegs {
+  position: absolute;
+  left: 212.3px;
+  top: 217.3px;
+  width: 120.3px;
+  height: 36.5px;
+}
+
+.trDesktop {
+  position: absolute;
+  left: 205.8px;
+  top: 184.8px;
+  width: 133px;
+  height: 35.4px;
+}
+
+.trMonitor {
+  position: absolute;
+  left: 242.2px;
+  top: 150.1px;
+  width: 70.4px;
+  height: 43.4px;
+}
+
+.trChair {
+  position: absolute;
+  left: 243.8px;
+  top: 212.9px;
+  width: 59.6px;
+  height: 42.2px;
+}
+
+.blShadow {
+  position: absolute;
+  left: 66.5px;
+  top: 370.7px;
+  width: 123px;
+  height: 24.7px;
+}
+
+.blLegs {
+  position: absolute;
+  left: 68.3px;
+  top: 348.5px;
+  width: 120.3px;
+  height: 36.5px;
+}
+
+.blDesktop {
+  position: absolute;
+  left: 61.8px;
+  top: 316px;
+  width: 133px;
+  height: 35.4px;
+}
+
+.blMonitor {
+  position: absolute;
+  left: 98.2px;
+  top: 281.3px;
+  width: 70.4px;
+  height: 43.4px;
+}
+
+.blChair {
+  position: absolute;
+  left: 99.8px;
+  top: 344px;
+  width: 59.6px;
+  height: 42.2px;
+}
+
+.kevinShadow {
+  position: absolute;
+  left: 210.5px;
+  top: 369.5px;
+  width: 123px;
+  height: 24.7px;
+}
+
+.kevinLegs {
+  position: absolute;
+  left: 212.3px;
+  top: 347.2px;
+  width: 120.3px;
+  height: 36.5px;
+}
+
+.kevinDesktop {
+  position: absolute;
+  left: 205.8px;
+  top: 314.7px;
+  width: 133px;
+  height: 35.4px;
+}
+
+.kevinMonitor {
+  position: absolute;
+  left: 242.2px;
+  top: 280px;
+  width: 70.4px;
+  height: 43.4px;
+}
+
+.kevinWorkstationBot {
+  position: absolute;
+  left: 233px;
+  top: 292px;
+  width: 82px;
+  height: 82px;
+  object-fit: cover;
+}
+
+.kevinChair {
+  position: absolute;
+  left: 243.8px;
+  top: 342.8px;
+  width: 59.6px;
+  height: 42.2px;
+}
+
+/* Stats cards */
+.cardLeftBg {
+  position: absolute;
+  left: 18px;
+  top: 430px;
+  width: 120px;
+  height: 117px;
+}
+
+.progressRing {
+  position: absolute;
+  left: 39px;
+  top: 450px;
+  width: 78px;
+  height: 78px;
+}
+
+.inputAiIcon {
+  position: absolute;
+  left: 66px;
+  top: 477px;
+  width: 24px;
+  height: 24px;
+}
+
+.cardRightBg {
+  position: absolute;
+  left: 151px;
+  top: 430px;
+  width: 233px;
+  height: 117px;
+}
+
+.statDivider {
+  position: absolute;
+  left: 267.5px;
+  top: 438px;
+  width: 1px;
+  height: 101px;
+}
+
+.ongoingTasksBlock {
+  position: absolute;
+  left: 185px;
+  top: 458px;
+  width: 53px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.taskProgressBlock {
+  position: absolute;
+  left: 292px;
+  top: 458px;
+  width: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.percentRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.statNum {
+  font-family: var(--font-title);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: normal;
+  color: #090b10;
+}
+
+.statPct {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 14px;
+  color: #090b10;
+  margin-left: 1px;
+}
+
+.statLabel {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(9, 11, 16, 0.49);
+  text-align: center;
+}
+
+/* Bottom sheet */
+.sheetBg {
+  position: absolute;
+  left: 0;
+  top: 563px;
+  width: 402px;
+  height: 517px;
+  pointer-events: none;
+}
+
+.tabsRow {
+  position: absolute;
+  left: 0;
+  top: 580px;
+  width: 402px;
+  height: 28px;
+  z-index: 10;
+}
+
+.tabAll,
+.tabWorking,
+.tabFree {
+  position: absolute;
+  top: 2px;
+  border: none;
+  background: none;
+  padding: 0;
+  font-family: var(--font-title);
+  /* Figma 14.988px -> rounded to 14px per Section 8.1 */
+  font-size: 14px;
+  line-height: normal;
+  text-align: center;
+}
+
+.tabAll {
+  left: 38px;
+  font-weight: 600;
+  color: rgba(18, 18, 18, 0.8);
+}
+
+.tabWorking {
+  left: 116px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.tabFree {
+  left: 228px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.filterBtn {
+  position: absolute;
+  left: 346px;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.filterIcon {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.tabDivider {
+  position: absolute;
+  left: 0;
+  top: 615.5px;
+  width: 402px;
+  height: 1px;
+  z-index: 10;
+}
+
+.activeTabLine {
+  position: absolute;
+  left: 17px;
+  top: 614.5px;
+  width: 62px;
+  height: 2px;
+  z-index: 11;
+}
+
+/* Task rows */
+.rowHotspot1,
+.rowHotspot2,
+.rowHotspot3 {
+  position: absolute;
+  left: 0;
+  width: 402px;
+  height: 74px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  text-align: left;
+  z-index: 10;
+}
+
+.rowHotspot1 {
+  top: 625px;
+}
+
+.rowHotspot2 {
+  top: 702px;
+}
+
+.rowHotspot3 {
+  top: 780px;
+}
+
+.rowAvatar {
+  position: absolute;
+  left: 17px;
+  top: 8px;
+  width: 54.15px;
+  height: 54.15px;
+}
+
+.avatarCircleBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bobArc {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 32.8px;
+  height: 54px;
+}
+
+.bob3dWrap {
+  position: absolute;
+  left: 5.68px;
+  top: 6px;
+  width: 41.426px;
+  height: 38.992px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bob3dImg {
+  width: 37.402px;
+  height: 34.597px;
+  transform: rotate(7.17deg);
+  object-fit: cover;
+}
+
+.kevin3dImg {
+  position: absolute;
+  left: 3px;
+  top: 4px;
+  width: 47px;
+  height: 47px;
+  object-fit: cover;
+}
+
+.miniBotsImg {
+  position: absolute;
+  left: 7px;
+  top: 16px;
+  width: 40px;
+  height: 21.86px;
+  object-fit: contain;
+}
+
+.statusDot {
+  position: absolute;
+  left: 38.3px;
+  top: 36.8px;
+  width: 14.3px;
+  height: 14.3px;
+}
+
+.rowBody {
+  position: absolute;
+  left: 86.17px;
+  top: 13px;
+  right: 17px;
+}
+
+.rowTop {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rowName {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 16px;
+  color: #090b10;
+  white-space: nowrap;
+}
+
+.badgeBlue {
+  padding: 2px 4px;
+  border-radius: 4px;
+  background-color: rgba(115, 198, 255, 0.2);
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 10px;
+  color: #3fb0ff;
+  white-space: nowrap;
+}
+
+.badgeGreen {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background-color: rgba(110, 217, 1, 0.1);
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 10px;
+  color: #54a700;
+  white-space: nowrap;
+}
+
+.rowTime {
+  margin-left: auto;
+  font-family: var(--font-body);
+  font-weight: 400;
+  /* Figma 12.087px -> 12px */
+  font-size: 12px;
+  color: #8d9097;
+  white-space: nowrap;
+}
+
+.rowDesc {
+  margin-top: 4px;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rowDivider1,
+.rowDivider2 {
+  position: absolute;
+  left: 86.17px;
+  width: 298.3px;
+  height: 1px;
+  z-index: 10;
+}
+
+.rowDivider1 {
+  top: 698px;
+}
+
+.rowDivider2 {
+  top: 775.5px;
+}

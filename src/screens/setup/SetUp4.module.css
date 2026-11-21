@@ -1,0 +1,389 @@
+.screen {
+  position: relative;
+  width: 402px;
+  height: 874px;
+  background-color: #edf0f7;
+  overflow: hidden;
+}
+
+.bgWrapper {
+  position: absolute;
+  left: -71px;
+  top: -163px;
+  width: 499px;
+  height: 1037px;
+  filter: blur(38.65px);
+  pointer-events: none;
+}
+
+.bgImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  top: 164px;
+  transform: translateX(-50%);
+  width: 276px;
+  text-align: center;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: normal;
+  background: linear-gradient(147.27deg, rgba(0, 0, 0, 0.8) 0%, rgba(52, 142, 252, 0.8) 141.86%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.cardsStage {
+  position: absolute;
+  inset: 0;
+  touch-action: pan-y;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.cardsStageDragging {
+  cursor: grabbing;
+}
+
+.arcCardAnchor {
+  position: absolute;
+  left: 134.6px;
+  top: 369.2px;
+  width: 129.23px;
+  height: 161.37px;
+  transform-origin: center center;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.arcCardBackPlate {
+  position: absolute;
+  inset: 0;
+  border-radius: 16.91px;
+  border: 1.13px solid #ffffff;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.11) 100%);
+  transform: skewX(2.67deg);
+  pointer-events: none;
+}
+
+.arcCardGlass {
+  position: absolute;
+  inset: 0;
+  border-radius: 16.91px;
+  border: 1.13px solid #ffffff;
+  background: linear-gradient(180deg, #ffffff 35.58%, rgba(255, 255, 255, 0.4) 100%);
+  transform: skewX(2.67deg);
+  pointer-events: none;
+}
+
+.arcCardIcon {
+  position: absolute;
+  left: 50%;
+  top: 16px;
+  width: 74px;
+  height: 74px;
+  transform: translateX(-50%);
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.arcCardLabel {
+  position: absolute;
+  left: 50%;
+  top: 108px;
+  width: 120px;
+  transform: translateX(-50%);
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  pointer-events: none;
+}
+
+.arcGlowWrap {
+  position: absolute;
+  left: -58.46px;
+  top: 341px;
+  width: 506.13px;
+  height: 567px;
+  transform: rotate(180deg);
+  pointer-events: none;
+}
+
+.arcGlowImg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.cardFarLeftWrap {
+  position: absolute;
+  left: -143px;
+  top: 444.71px;
+  width: 210.67px;
+  height: 200.05px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.cardFarLeftInner {
+  width: 129.23px;
+  height: 161.37px;
+  border-radius: 16.91px;
+  border: 1.13px solid #ffffff;
+  background: linear-gradient(180deg, #ffffff 35.58%, rgba(255, 255, 255, 0.4) 100%);
+  transform: rotate(-45deg) skewX(2.67deg);
+}
+
+.cardSupplierBtn,
+.cardPayrollBtn,
+.cardCompanyBtn {
+  position: absolute;
+  inset: 0;
+  border: none;
+  background: none;
+  padding: 0;
+  pointer-events: none;
+}
+
+.cardLeftBackWrap,
+.cardLeftFrontWrap {
+  position: absolute;
+  left: -20px;
+  top: 377px;
+  width: 186.78px;
+  height: 192.22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+.cardLeftBackInner {
+  width: 129.23px;
+  height: 157.48px;
+  border-radius: 16.91px;
+  border: 1.13px solid #ffffff;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.11) 100%);
+  transform: rotate(-22.76deg) skewX(2.67deg);
+}
+
+.cardLeftFrontInner {
+  width: 129.23px;
+  height: 157.48px;
+  border-radius: 16.91px;
+  border: 1.13px solid #ffffff;
+  background: linear-gradient(180deg, #ffffff 35.58%, rgba(255, 255, 255, 0.4) 100%);
+  transform: rotate(-22.76deg) skewX(2.67deg);
+}
+
+.supplierIconWrap {
+  position: absolute;
+  left: 10.3px;
+  top: 389.47px;
+  width: 98.32px;
+  height: 98.32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.supplierIcon {
+  width: 75.53px;
+  height: 75.53px;
+  object-fit: cover;
+  transform: rotate(-22deg);
+}
+
+.supplierText {
+  position: absolute;
+  left: 14px;
+  top: 478px;
+  width: 145px;
+  font-family: var(--font-title);
+  font-weight: 400;
+  /* Figma 18.036px -> 18px */
+  font-size: 18px;
+  line-height: 24.8px;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  transform: rotate(-22deg);
+}
+
+.cardPayrollWrap {
+  position: absolute;
+  left: 130.92px;
+  top: 369.18px;
+  width: 136.73px;
+  height: 161.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+.cardPayrollInner {
+  width: 129.23px;
+  height: 161.37px;
+  border-radius: 16.91px;
+  border: 1.13px solid #ffffff;
+  background: linear-gradient(180deg, #ffffff 35.58%, rgba(255, 255, 255, 0.4) 100%);
+  transform: skewX(2.67deg);
+}
+
+.payrollIcon {
+  position: absolute;
+  left: 162.48px;
+  top: 381.58px;
+  width: 72.14px;
+  height: 72.14px;
+  object-fit: cover;
+}
+
+.payrollText {
+  position: absolute;
+  left: 168px;
+  top: 480.8px;
+  width: 60px;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.8px;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.cardCompanyWrap {
+  position: absolute;
+  left: 243.64px;
+  top: 377.07px;
+  width: 174.61px;
+  height: 201.54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+.cardCompanyInner {
+  width: 129.23px;
+  height: 161.37px;
+  border-radius: 16.91px;
+  border: 1.13px solid #ffffff;
+  background: linear-gradient(180deg, #ffffff 35.58%, rgba(255, 255, 255, 0.4) 100%);
+  transform: rotate(22.76deg) skewX(2.67deg);
+}
+
+.companyIconWrap {
+  position: absolute;
+  left: 297.33px;
+  top: 400.33px;
+  width: 100.67px;
+  height: 100.67px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.companyIcon {
+  width: 74.47px;
+  height: 74.47px;
+  object-fit: cover;
+  transform: rotate(27.92deg);
+}
+
+.companyText {
+  position: absolute;
+  left: 254px;
+  top: 487px;
+  width: 120px;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.8px;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  transform: rotate(22deg);
+}
+
+.cardExpenseWrap {
+  position: absolute;
+  left: 346.22px;
+  top: 453.72px;
+  width: 200.05px;
+  height: 210.67px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.cardExpenseInner {
+  width: 129.23px;
+  height: 161.37px;
+  border-radius: 16.91px;
+  border: 1.13px solid #ffffff;
+  background: linear-gradient(180deg, #ffffff 35.58%, rgba(255, 255, 255, 0.4) 100%);
+  transform: rotate(45deg) skewX(2.67deg);
+}
+
+.expenseText {
+  position: absolute;
+  left: 375px;
+  top: 565px;
+  width: 145px;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.8px;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+.nextBtn {
+  position: absolute;
+  left: 29px;
+  top: 754px;
+  width: 344px;
+  height: 54px;
+  border: none;
+  border-radius: 35px;
+  background-color: #1b2023;
+  color: #ffffff;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helpLink {
+  position: absolute;
+  left: 165px;
+  top: 816px;
+  border: none;
+  background: none;
+  padding: 0;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.2);
+  text-decoration: underline;
+}

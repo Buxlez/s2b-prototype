@@ -1,0 +1,413 @@
+.screen {
+  position: relative;
+  width: 402px;
+  height: 874px;
+  background-color: #edf0f7;
+  overflow: hidden;
+}
+
+.titleBlock {
+  position: absolute;
+  left: 25px;
+  top: 141px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  font-family: var(--font-title);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  background: linear-gradient(156.69deg, rgba(0, 0, 0, 0.8) 0%, rgba(52, 142, 252, 0.8) 141.86%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.subtitle {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Slot-machine 3D card stack */
+.cardStack {
+  position: absolute;
+  left: 0;
+  top: 214px;
+  width: 402px;
+  height: 224px;
+  perspective: 900px;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: grab;
+  z-index: 6;
+}
+
+.cardStackDragging {
+  cursor: grabbing;
+}
+
+.cardSlot {
+  position: absolute;
+  left: 29px;
+  top: 48px; /* 214 + 48 = 262px (exact Figma hero card top) */
+  width: 344px;
+  height: 120px;
+  border-radius: 28px;
+  transform-origin: center center;
+  will-change: transform, opacity;
+  pointer-events: auto;
+}
+
+.cardGlassSurface {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: rgba(255, 255, 255, 0.72);
+  border: 1px solid #ffffff;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0px 1px 10.6px 0px rgba(0, 0, 0, 0.04);
+}
+
+.cardHeroSurface {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid #ffffff;
+  background-image:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%),
+    linear-gradient(145.13deg, rgb(89, 165, 255) 3.03%, rgb(233, 194, 255) 157.69%);
+  box-shadow:
+    0px 2px 6px 0px rgba(28, 33, 51, 0.06),
+    0px 16px 40px 0px rgba(28, 33, 51, 0.12);
+}
+
+.cardContent {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cardContentDark {
+  position: absolute;
+  inset: 0;
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.drawnTitle {
+  font-family: var(--font-title);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #fffafa;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardContentDark .drawnTitle {
+  color: rgba(24, 34, 58, 0.85);
+}
+
+.drawnBottomRow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.drawnAccount {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.cardContentDark .drawnAccount {
+  color: rgba(24, 34, 58, 0.45);
+}
+
+.drawnAmount {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fffafa;
+}
+
+.cardContentDark .drawnAmount {
+  color: rgba(24, 34, 58, 0.88);
+}
+
+.fileSheet {
+  position: absolute;
+  left: 0;
+  top: 452px;
+  width: 402px;
+  height: 442px;
+  padding: 10px 17px 0;
+  border-radius: 32px 32px 0 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid #ffffff;
+  box-shadow: 0px 1px 10.6px 0px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.handleRow {
+  display: flex;
+  justify-content: center;
+}
+
+.handle {
+  width: 40px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.fileHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 7px;
+}
+
+.fileTitle {
+  font-family: var(--font-title);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #111111;
+}
+
+.expandBtn {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.expandIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.rowsCard {
+  position: relative;
+  height: 148px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  padding: 8px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.rowsViewport {
+  position: relative;
+  height: 132px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 10%, #000 90%, transparent 100%);
+  mask-image: linear-gradient(180deg, transparent 0%, #000 10%, #000 90%, transparent 100%);
+}
+
+.activeRowHighlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: rgba(35, 131, 255, 0.1);
+  border: 1px solid rgba(35, 131, 255, 0.45);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.rowsTrack {
+  position: relative;
+  z-index: 2;
+}
+
+.fileRow {
+  width: 100%;
+  height: 44px;
+  padding: 0 8px;
+  border: none;
+  background: transparent;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(0, 0, 0, 0.4);
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 400;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.14s ease;
+}
+
+.fileRow .colNum {
+  width: 16px;
+  color: rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+}
+
+.fileRow .colName {
+  width: 116px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+}
+
+.fileRow .colAcc {
+  width: 104px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+}
+
+.fileRow .colAmt {
+  flex: 1;
+  text-align: right;
+}
+
+.fileRowActive {
+  color: #111111;
+}
+
+.fileRowActive .colNum {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.fileRowActive .colName,
+.fileRowActive .colAmt {
+  font-weight: 500;
+}
+
+.footer {
+  position: absolute;
+  left: 29px;
+  top: 732px;
+  width: 344px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.progressRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.segments {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.segBlue,
+.segAmber,
+.segGray {
+  width: 16px;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.segBlue {
+  background: linear-gradient(90deg, #2383ff 0%, #09aaff 100%);
+}
+
+.segAmber {
+  background-color: #ff9f1a;
+}
+
+.segGray {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.progressText {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.actionsRow {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.editBtn {
+  width: 120px;
+  height: 54px;
+  border-radius: 27px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid #ffffff;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.05);
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 18px;
+  color: #1b2023;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.correctBtn {
+  flex: 1;
+  height: 54px;
+  border: none;
+  border-radius: 27px;
+  background-color: #1b2023;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.actionIcon {
+  width: 20px;
+  height: 20px;
+}

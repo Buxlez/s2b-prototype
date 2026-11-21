@@ -1,0 +1,483 @@
+.screen {
+  position: relative;
+  width: 402px;
+  height: 874px;
+  background-color: #edf0f7;
+  overflow: hidden;
+}
+
+.bgWrapper {
+  position: absolute;
+  left: -71px;
+  top: -163px;
+  width: 499px;
+  height: 1037px;
+  filter: blur(38.65px);
+  pointer-events: none;
+}
+
+.bgImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+}
+
+.agentChip {
+  position: absolute;
+  left: 50%;
+  top: 73px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 18px 6px 6px;
+  border-radius: 26px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.05);
+  z-index: 2;
+}
+
+.agentChipName {
+  font-family: var(--font-title);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: normal;
+  color: rgba(0, 0, 0, 0.8);
+  white-space: nowrap;
+}
+
+.ongoingCard {
+  position: absolute;
+  left: 17px;
+  top: 160px;
+  width: 368px;
+  padding: 16px 18px;
+  border-radius: 28px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid #ffffff;
+  box-shadow: 0px 1px 10.6px 0px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.ongoingTopRow {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.ongoingTitleCol {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+.ongoingOverline {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 12px;
+  line-height: normal;
+  color: rgba(0, 0, 0, 0.62);
+}
+
+.ongoingTitle {
+  font-family: var(--font-title);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: normal;
+  color: #111111;
+}
+
+.spacer {
+  flex: 1 0 0;
+  min-width: 1px;
+}
+
+.statusPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background-color: rgba(255, 159, 26, 0.14);
+  flex-shrink: 0;
+}
+
+.dot6 {
+  width: 6px;
+  height: 6px;
+  display: block;
+}
+
+.statusText {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: normal;
+  color: #b86a00;
+  white-space: nowrap;
+}
+
+.progressBar {
+  width: 100%;
+  display: flex;
+  gap: 4px;
+}
+
+.segBlue,
+.segAmber,
+.segGray {
+  flex: 1 0 0;
+  min-width: 1px;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.segBlue {
+  background-color: #2383ff;
+}
+
+.segAmber {
+  background-color: #ff9f1a;
+}
+
+.segGray {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.currentStepRow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stepIconCircle {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #ff9f1a;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.exclIcon {
+  width: 2px;
+  height: 7px;
+  display: block;
+}
+
+.stepLabel {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  color: #111111;
+  white-space: nowrap;
+}
+
+.expandRight {
+  width: 16px;
+  height: 16px;
+  transform: rotate(-90deg);
+  display: block;
+}
+
+.userBubbleRow {
+  position: absolute;
+  left: 17px;
+  top: 296px;
+  width: 368px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.userBubble {
+  background-color: #1b2023;
+  padding: 10px 16px;
+  border-radius: 22px 22px 6px 22px;
+}
+
+.userBubbleText {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.timestampRow {
+  position: absolute;
+  left: 17px;
+  top: 350px;
+  width: 368px;
+  display: flex;
+  justify-content: center;
+}
+
+.timestampText {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: normal;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.threadLinkRow {
+  position: absolute;
+  left: 17px;
+  top: 383px;
+  width: 368px;
+  display: flex;
+  justify-content: center;
+}
+
+.threadLinkPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #ffffff;
+}
+
+.threadCountGroup {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.icon18 {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.threadCountText,
+.threadLabel {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: normal;
+  color: rgba(0, 0, 0, 0.7);
+  white-space: nowrap;
+}
+
+.chevron14 {
+  width: 4.5px;
+  height: 8px;
+  margin: 0 4.75px;
+  opacity: 0.45;
+  display: block;
+}
+
+.agentBubble {
+  position: absolute;
+  left: 17px;
+  top: 430px;
+  background-color: rgba(255, 255, 255, 0.62);
+  border: 1px solid #ffffff;
+  border-radius: 22px 22px 22px 6px;
+  padding: 10px 16px;
+  box-shadow: 0px 1px 10.6px 0px rgba(0, 0, 0, 0.03);
+}
+
+.agentBubbleText {
+  width: 276px;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.approvalCard {
+  position: absolute;
+  left: 17px;
+  top: 524px;
+  width: 310px;
+  padding: 16px 18px;
+  border-radius: 28px 28px 28px 8px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid #ffffff;
+  box-shadow: 0px 1px 10.6px 0px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.kvRows {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.kvRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.kvKey {
+  width: 64px;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.kvValue {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  color: #111111;
+  white-space: nowrap;
+}
+
+.kvValueBold {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: normal;
+  color: #111111;
+  white-space: nowrap;
+}
+
+.changedBadge {
+  padding: 2px 8px;
+  border-radius: 10px;
+  background-color: rgba(35, 131, 255, 0.1);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: normal;
+  color: #2383ff;
+  white-space: nowrap;
+}
+
+.actionsRow {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+}
+
+.secondaryBtn {
+  flex: 1 0 0;
+  min-width: 1px;
+  padding: 11px 0;
+  border-radius: 23px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  color: #1b2023;
+  text-align: center;
+}
+
+.primaryBtn {
+  flex: 1 0 0;
+  min-width: 1px;
+  padding: 11px 0;
+  border-radius: 23px;
+  background-color: #1b2023;
+  border: 1px solid #1b2023;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  color: #ffffff;
+  text-align: center;
+}
+
+.bottomFade {
+  position: absolute;
+  left: 0;
+  top: 750px;
+  width: 402px;
+  height: 124px;
+  background: linear-gradient(
+    180deg,
+    rgba(237, 240, 247, 0) 0%,
+    rgba(237, 240, 247, 0.95) 40%,
+    #edf0f7 100%
+  );
+  pointer-events: none;
+}
+
+.addCircleBtn {
+  position: absolute;
+  left: 17px;
+  top: 794px;
+  width: 58px;
+  height: 58px;
+  border-radius: 29px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.addIcon22 {
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+.composerPill {
+  position: absolute;
+  left: 83px;
+  top: 794px;
+  width: 302px;
+  height: 58px;
+  border-radius: 29px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.05);
+  padding: 0 6px 0 22px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.composerPlaceholder {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  color: rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
+}
+
+.voiceBtn {
+  width: 46px;
+  height: 46px;
+  border-radius: 23px;
+  background-color: #1b2023;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.voiceIcon20 {
+  width: 15px;
+  height: 14px;
+  display: block;
+}

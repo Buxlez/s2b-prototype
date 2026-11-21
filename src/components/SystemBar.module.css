@@ -1,0 +1,49 @@
+.systemBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 402px;
+  height: 59px;
+  padding: 22px 24px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 50;
+  pointer-events: none;
+}
+
+.time {
+  width: 100px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.5px;
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.4px;
+}
+
+.dynamicIsland {
+  position: absolute;
+  left: 50%;
+  top: calc(50% + 0.5px);
+  transform: translate(-50%, -50%);
+  width: 124px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #000000;
+}
+
+.levels {
+  width: 100px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding-top: 1px;
+  padding-right: 1px;
+}

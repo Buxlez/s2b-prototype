@@ -1,0 +1,18 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="120.343" height="36.4634" viewBox="0 0 120.343 36.4634" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="bob-workstation-desk-legs">
+<path id="Vector" d="M3.5331 0H11.777L6.38676 33.9268C6.17538 35.6179 5.32985 36.4634 3.85017 36.4634H1.63066C0.362369 36.4634 -0.166086 35.6179 0.0452962 33.9268L3.5331 0Z" fill="url(#paint0_linear_0_174)"/>
+<path id="Vector_2" d="M108.484 7.58201e-06H116.728L120.216 33.9268C120.639 35.6179 120.005 36.4634 118.314 36.4634H116.411C115.143 36.4634 114.403 35.6179 114.192 33.9268L108.484 7.58201e-06Z" fill="url(#paint1_linear_0_174)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_174" x1="-3.47654e-10" y1="0" x2="11.777" y2="0" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E1E7EF"/>
+<stop offset="0.5" stop-color="#D8E0EA"/>
+<stop offset="1" stop-color="#CBD5E2"/>
+</linearGradient>
+<linearGradient id="paint1_linear_0_174" x1="108.484" y1="7.58201e-06" x2="120.343" y2="7.58201e-06" gradientUnits="userSpaceOnUse">
+<stop stop-color="#CDD7E4"/>
+<stop offset="0.55" stop-color="#D6DFEA"/>
+<stop offset="1" stop-color="#E2E8F0"/>
+</linearGradient>
+</defs>
+</svg>

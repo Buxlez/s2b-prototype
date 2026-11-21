@@ -1,0 +1,284 @@
+.screen {
+  position: relative;
+  width: 402px;
+  height: 874px;
+  background-color: #edf0f7;
+  overflow: hidden;
+}
+
+.bgWrapper {
+  position: absolute;
+  left: -71px;
+  top: -163px;
+  width: 499px;
+  height: 1037px;
+  filter: blur(12.6px);
+  pointer-events: none;
+}
+
+.bgImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+.papersGroup {
+  position: absolute;
+  left: -81px;
+  top: 101px;
+  width: 502.894px;
+  height: 380.251px;
+  pointer-events: none;
+}
+
+.papersRotate {
+  position: absolute;
+  left: 20.97px;
+  top: 31.48px;
+  width: 460.963px;
+  height: 317.284px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.papersImg {
+  width: 449px;
+  height: 299px;
+  object-fit: cover;
+  opacity: 0.7;
+  transform: scaleY(-1) rotate(-177.63deg);
+}
+
+.papersShadowWrap {
+  position: absolute;
+  left: 157.15px;
+  top: 217.92px;
+  width: 166.078px;
+  height: 28.478px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.papersShadow {
+  width: 166px;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  filter: blur(50px);
+  transform: rotate(6.41deg);
+}
+
+.cardOutline {
+  position: absolute;
+  left: 17px;
+  top: 258.83px;
+  width: 369.438px;
+  height: 518.84px;
+  pointer-events: none;
+}
+
+.cardClickHotspot {
+  position: absolute;
+  left: 17px;
+  top: 259px;
+  width: 369px;
+  height: 519px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.bobIllustration {
+  position: absolute;
+  left: 159px;
+  top: 264px;
+  width: 231px;
+  height: 148px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bobImg {
+  position: absolute;
+  left: 0;
+  top: -19.12%;
+  width: 100%;
+  height: 138.24%;
+  max-width: none;
+}
+
+.heading {
+  position: absolute;
+  left: 51px;
+  top: 304px;
+  width: 200px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: normal;
+  background: linear-gradient(156.87deg, rgba(0, 0, 0, 0.8) 0%, rgba(52, 142, 252, 0.8) 100.93%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.subheading {
+  position: absolute;
+  left: 51px;
+  top: 372px;
+  width: 118px;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  color: rgba(0, 0, 0, 0.32);
+}
+
+.lineV1,
+.lineV2,
+.lineV3 {
+  position: absolute;
+  left: 64.5px;
+  width: 2px;
+  height: 35.5px;
+  pointer-events: none;
+  transform-origin: top center;
+}
+
+.lineV1 {
+  top: 491px;
+}
+
+.lineV2 {
+  top: 569px;
+}
+
+.lineV3 {
+  top: 647px;
+}
+
+.pendingRingPlaceholder {
+  position: absolute;
+  inset: 2px;
+  border-radius: 50%;
+  border: 1.5px dashed rgba(35, 131, 255, 0.35);
+}
+
+.stepsList {
+  position: relative;
+}
+
+.stepRow {
+  position: absolute;
+  left: 51px;
+  right: 48px;
+  height: 61px;
+}
+
+.stepIconWrap {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 28px;
+  height: 28px;
+}
+
+.circleBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.checkIcon {
+  position: absolute;
+  left: 7px;
+  top: 8.5px;
+  width: 15px;
+  height: 11px;
+}
+
+.pendingIcon {
+  position: absolute;
+  inset: -1.79%;
+  width: 103.58%;
+  height: 103.58%;
+}
+
+.stepTextCol {
+  position: absolute;
+  left: 42px;
+  top: 0;
+  width: 261px;
+}
+
+.stepTitle {
+  font-family: var(--font-title);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: normal;
+  color: #111111;
+}
+
+.stepSub {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: normal;
+  color: #4a4a4a;
+  margin-top: 1px;
+}
+
+.stepSubMuted {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: normal;
+  color: #8a8a8a;
+  margin-top: 1px;
+}
+
+.stepDivider {
+  position: absolute;
+  left: 0;
+  top: 60.5px;
+  width: 261px;
+  height: 1px;
+}
+
+.stopBtn {
+  position: absolute;
+  left: 50%;
+  top: 799px;
+  transform: translateX(-50%);
+  height: 48px;
+  padding: 0 18px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.stopBtn:active {
+  transform: translateX(-50%) scale(0.97);
+}
+
+.stopIcon {
+  width: 14px;
+  height: 16px;
+}
+
+.stopLabel {
+  font-family: var(--font-title);
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+}

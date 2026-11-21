@@ -1,0 +1,229 @@
+.screen {
+  position: relative;
+  width: 402px;
+  height: 874px;
+  background-color: #edf0f7;
+  overflow: hidden;
+}
+
+.title {
+  position: absolute;
+  left: 34px;
+  top: 83px;
+  font-family: var(--font-title);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.433;
+  background: linear-gradient(114.13deg, rgba(0, 0, 0, 0.8) 0%, rgba(52, 142, 252, 0.8) 130.02%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.cardsList {
+  position: absolute;
+  left: 17px;
+  top: 169px;
+  width: 368px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.botCard {
+  position: relative;
+  width: 368px;
+  height: 96px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.botGlass {
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+}
+
+.kevinAvatar {
+  position: absolute;
+  left: 28px;
+  top: 29px;
+  width: 82.33px;
+  height: 67px;
+  pointer-events: none;
+}
+
+.stuartAvatar {
+  position: absolute;
+  left: 25px;
+  top: 26px;
+  width: 87.33px;
+  height: 70.33px;
+  pointer-events: none;
+}
+
+.botInfo {
+  position: absolute;
+  left: 128px;
+  top: 23px;
+  width: 164px;
+}
+
+.nameRow {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.botName {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 23px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.ownerPill {
+  height: 18px;
+  padding: 0 8px;
+  border-radius: 9px;
+  background-color: #edf0f7;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.ownerIcon {
+  width: 10px;
+  height: 10px;
+}
+
+.botDesc {
+  margin-top: 3px;
+  width: 158px;
+  height: 28px;
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.actionCircle {
+  position: absolute;
+  left: 310px;
+  top: 30px;
+  width: 38px;
+  height: 38px;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.actionCircleBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.actionIcon {
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  width: 20px;
+  height: 20px;
+}
+
+.plusH {
+  position: absolute;
+  left: 9px;
+  top: 18px;
+  width: 20px;
+  height: 2px;
+}
+
+.plusV {
+  position: absolute;
+  left: 9px;
+  top: 18px;
+  width: 20px;
+  height: 2px;
+  transform: rotate(90deg);
+}
+
+.bottomActions {
+  position: absolute;
+  left: 114px;
+  top: 757px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.usersPlusBtn {
+  width: 45px;
+  height: 45px;
+  border-radius: 29px;
+  border: 1.2px solid #1b2023;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.agentBtn {
+  width: 122px;
+  height: 45px;
+  border-radius: 29px;
+  border: 2px solid transparent;
+  background:
+    linear-gradient(#1b2023, #1b2023) padding-box,
+    linear-gradient(125deg, #7cd7ff 0%, #c6b7f7 52%, #e6b8eb 100%) border-box;
+  color: #ffffff;
+  font-family: var(--font-title);
+  font-weight: 400;
+  /* Figma 16.601px -> rounded to 16px per Section 8.1 */
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 14px;
+}
+
+.btnIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.helpLink {
+  position: absolute;
+  left: 50%;
+  top: 815px;
+  transform: translateX(-50%);
+  border: none;
+  background: none;
+  padding: 0;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.2);
+  text-decoration: underline;
+}
+
+.helpLink:active {
+  transform: translateX(-50%) scale(0.97);
+}
