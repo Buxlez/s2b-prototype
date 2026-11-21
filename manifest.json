@@ -1,0 +1,11 @@
+{
+  "name": "S2B Prototype",
+  "short_name": "S2B",
+  "description": "Standard Chartered Straight2Bank Mobile Interactive Prototype",
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#edf0f7",
+  "theme_color": "#edf0f7",
+  "icons": []
+}
