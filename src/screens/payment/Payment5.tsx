@@ -114,7 +114,7 @@ export function Payment5() {
           {[1, 2, 3].map((dotNum, idx) => (
             <motion.img
               key={dotNum}
-              src={`/assets/payment-5/dot-${dotNum}.svg`}
+              src={`./assets/payment-5/dot-${dotNum}.svg`}
               alt=""
               className={styles.dot}
               animate={
